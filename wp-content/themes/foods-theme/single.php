@@ -3,8 +3,11 @@
 <div class="opened-food">
 
 
-
-    <p class="food-title"><?php the_title(); ?></p>
+    <p class="food-title"><?php the_title();
+                            if (current_user_can('manage_options')) {
+                                echo ' || ';
+                                edit_post_link();
+                            } ?></p>
 
     <p class="desc">
 

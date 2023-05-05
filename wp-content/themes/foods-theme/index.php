@@ -22,7 +22,6 @@ $foods = new WP_Query($args);
 
                 <p class="food-title"><?php the_title(sprintf('<a href= "%s">', esc_url(get_permalink())), '</a>'); ?></p>
 
-
                 <p class="food-subtitle">
                     <?php the_content(); ?>
                 </p>
