@@ -16,6 +16,27 @@
         border-radius: 5px;
         font-weight: 600;
     }
+
+    .input-con {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 10px 0;
+    }
+
+    .input-con input {
+        width: 300px;
+
+    }
+
+    button {
+        background: dodgerblue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 </style>
 
 <div class="container">
