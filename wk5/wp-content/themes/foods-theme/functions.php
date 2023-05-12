@@ -11,7 +11,7 @@ add_action('wp_enqueue_scripts', 'foods_enqueue_scripts');
 function foods_widgets_init()
 {
     add_theme_support('menus');
-    add_theme_support('post-thumbnails');
+    add_theme_support('post-thumbnails', ['foods']);
 }
 add_action('widgets_init', 'foods_widgets_init');
 
@@ -41,7 +41,7 @@ function foods_post_type()
         'query_variable' => true,
         'rewrite' => array('slug' => 'foods'),
         'capability' => 'post',
-        'support' => [
+        'supports' => [
             'title',
             'editor',
             'thumbnail',
